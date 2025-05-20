@@ -1,0 +1,61 @@
+pessoa///
+
+
+package cadastro;
+
+public class Pessoa {
+
+	private String nome;
+	private int idade;
+	private String email;
+	
+
+	public Pessoa(String nome, int idade, String email) {
+		this.nome = nome;
+		this.idade = idade;
+		this.email = email;
+	}
+	
+	public void exibirDados() {
+		System.out.println("-------Dados da Pessoa--------");
+		System.out.println("nome: " + nome);
+		System.out.println("idade: " + idade);
+		System.out.println("nome: " + email);
+	}
+	
+}
+
+Main//
+
+package cadastro;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	
+	Pessoa[] pessoas = new Pessoa[100];
+	int contador = 0;
+	int opcao;
+	
+	do {
+		System.out.println("\n ========== MENU ==========");
+		System.out.println("1- Cadastrar pessoa");
+		System.out.println("2- Listar pessoas");
+		System.out.println("0- Sair");
+		System.out.println("Escolha uma opção: ");
+		opcao = scanner.nextInt();
+		scanner.nextLine();
+		
+		switch (opcao) {
+		case 1:
+			System.out.println("Nome: ");
+			String nome = scanner.nextLine();
+			scanner.nextLine();
+		}
+	}
+	}
+
+}
